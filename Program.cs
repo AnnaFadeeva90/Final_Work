@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задать массив строк  и вывести только те,длинна которых меньше или равно 3 символам.
+Console.WriteLine("Из заданного массива строк только эти строки состоят из 3-х или меньешго количества символов:");
+
+string [] massive = {"hello","2","World",":-)"};
+
+Console.WriteLine(string.Join(", ", massive.Where(x => x.Length <= 3)));
+
